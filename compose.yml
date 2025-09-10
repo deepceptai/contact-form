@@ -1,0 +1,16 @@
+services: 
+  app: 
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    container_name: contact-form-api
+    ports:
+      - "${PORT:-5000}:5000"
+    env_file:
+      - ./contact-api/.env
+    volumes:
+      - ./contact-api:/app
+      - /app/node_modules
+    restart: unless-stopped
+
+
