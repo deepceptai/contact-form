@@ -1,7 +1,7 @@
-services: 
-  app: 
-    build: 
-      context: .
+services:
+  app:
+    build:
+      context: ./contact-api
       dockerfile: Dockerfile
     container_name: contact-form-api
     ports:
@@ -12,5 +12,3 @@ services:
       - ./contact-api:/app
       - /app/node_modules
     restart: unless-stopped
-
-
