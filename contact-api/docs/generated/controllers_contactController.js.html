@@ -1,4 +1,32 @@
-/**
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Source: controllers/contactController.js</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Source: controllers/contactController.js</h1>
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/**
  * contact-api Controller Module
  * Contains all middleware for the contact form API.
  * @module contactController
@@ -27,15 +55,15 @@ export const submitContactForm = async (req, res) => {
 
     // HTML email template matching your webpage style
     const htmlTemplate = `
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>New Contact Form Submission</title>
-        <style>
+    &lt;!DOCTYPE html>
+    &lt;html lang="en">
+    &lt;head>
+        &lt;meta charset="UTF-8">
+        &lt;meta name="viewport" content="width=device-width, initial-scale=1.0">
+        &lt;title>New Contact Form Submission&lt;/title>
+        &lt;style>
             /* Import fonts similar to your webpage */
-            @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Playfair+Display:wght@400;500;600;700&amp;display=swap');
             
             * {
                 margin: 0;
@@ -228,66 +256,66 @@ export const submitContactForm = async (req, res) => {
                     padding: 25px 20px;
                 }
             }
-        </style>
-    </head>
-    <body>
-        <div class="email-container">
-            <!-- Header Section -->
-            <div class="email-header">
-                <h1 class="brand-title">Avani & Dvara</h1>
-                <p class="brand-subtitle">The Company</p>
-            </div>
+        &lt;/style>
+    &lt;/head>
+    &lt;body>
+        &lt;div class="email-container">
+            &lt;!-- Header Section -->
+            &lt;div class="email-header">
+                &lt;h1 class="brand-title">Avani &amp; Dvara&lt;/h1>
+                &lt;p class="brand-subtitle">The Company&lt;/p>
+            &lt;/div>
             
-            <!-- Content Section -->
-            <div class="email-content">
-                <h2 class="submission-title">New Contact Form Submission</h2>
-                <p class="submission-subtitle">You have received a new inquiry through your website</p>
+            &lt;!-- Content Section -->
+            &lt;div class="email-content">
+                &lt;h2 class="submission-title">New Contact Form Submission&lt;/h2>
+                &lt;p class="submission-subtitle">You have received a new inquiry through your website&lt;/p>
                 
-                <div class="contact-details">
-                    <div class="detail-item">
-                        <span class="detail-label">Name:</span>
-                        <span class="detail-value">${name}</span>
-                    </div>
+                &lt;div class="contact-details">
+                    &lt;div class="detail-item">
+                        &lt;span class="detail-label">Name:&lt;/span>
+                        &lt;span class="detail-value">${name}&lt;/span>
+                    &lt;/div>
                     
-                    <div class="detail-item">
-                        <span class="detail-label">Email:</span>
-                        <span class="detail-value">
-                            <a href="mailto:${email}" style="color: #667eea; text-decoration: none;">${email}</a>
-                        </span>
-                    </div>
+                    &lt;div class="detail-item">
+                        &lt;span class="detail-label">Email:&lt;/span>
+                        &lt;span class="detail-value">
+                            &lt;a href="mailto:${email}" style="color: #667eea; text-decoration: none;">${email}&lt;/a>
+                        &lt;/span>
+                    &lt;/div>
                     
-                    <div class="detail-item">
-                        <span class="detail-label">Phone:</span>
-                        <span class="detail-value">
-                            <a href="tel:${phone}" style="color: #667eea; text-decoration: none;">${phone}</a>
-                        </span>
-                    </div>
-                </div>
+                    &lt;div class="detail-item">
+                        &lt;span class="detail-label">Phone:&lt;/span>
+                        &lt;span class="detail-value">
+                            &lt;a href="tel:${phone}" style="color: #667eea; text-decoration: none;">${phone}&lt;/a>
+                        &lt;/span>
+                    &lt;/div>
+                &lt;/div>
                 
-                <div class="divider"></div>
+                &lt;div class="divider">&lt;/div>
                 
-                <div class="message-section">
-                    <span class="message-label">Message:</span>
-                    <div class="message-content">${message}</div>
-                </div>
-            </div>
+                &lt;div class="message-section">
+                    &lt;span class="message-label">Message:&lt;/span>
+                    &lt;div class="message-content">${message}&lt;/div>
+                &lt;/div>
+            &lt;/div>
             
-            <!-- Footer Section -->
-            <div class="email-footer">
-                <div class="footer-brand">Avani & Dvara</div>
-                <p class="footer-text">
-                    This email was sent from your website contact form.<br>
+            &lt;!-- Footer Section -->
+            &lt;div class="email-footer">
+                &lt;div class="footer-brand">Avani &amp; Dvara&lt;/div>
+                &lt;p class="footer-text">
+                    This email was sent from your website contact form.&lt;br>
                     Please respond directly to the customer's email address above.
-                </p>
-            </div>
-        </div>
-    </body>
-    </html>
+                &lt;/p>
+            &lt;/div>
+        &lt;/div>
+    &lt;/body>
+    &lt;/html>
     `;
 
     // Email options with both HTML and text versions
     let mailOptions = {
-      from: `"Avani & Dvara Contact Form" <${process.env.EMAIL_USER}>`, 
+      from: `"Avani &amp; Dvara Contact Form" &lt;${process.env.EMAIL_USER}>`, 
       to: process.env.EMAIL_USER,
       subject: `New Contact Form Submission from ${name}`,
       html: htmlTemplate,
@@ -305,7 +333,7 @@ export const submitContactForm = async (req, res) => {
         ${message}
 
         ---
-        This email was sent from your Avani & Dvara website contact form.
+        This email was sent from your Avani &amp; Dvara website contact form.
         Please respond directly to the customer's email address: ${email}
       `,
     };
@@ -317,4 +345,26 @@ export const submitContactForm = async (req, res) => {
     console.error("❌ Error sending email:", error);
     res.status(500).json({ error: "Failed to send message" });
   }
-};
+};</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Modules</h3><ul><li><a href="module-contactController.html">contactController</a></li><li><a href="module-routes.html">routes</a></li></ul><h3>Global</h3><ul><li><a href="global.html#checkSpam">checkSpam</a></li><li><a href="global.html#ipRequests">ipRequests</a></li><li><a href="global.html#sanitizeInput">sanitizeInput</a></li><li><a href="global.html#validateFields">validateFields</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 4.0.4</a> on Fri Sep 12 2025 09:20:45 GMT+0000 (Coordinated Universal Time)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>

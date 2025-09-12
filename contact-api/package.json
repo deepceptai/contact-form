@@ -4,7 +4,8 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "server": "npx nodemon server.js"
+    "server": "npx nodemon server.js",
+    "docs":"jsdoc controllers/contactController.js middleware/contactMiddleware.js route/contactRoute.js -d ./docs/generated"
   },
   "keywords": [],
   "author": "",
@@ -14,6 +15,7 @@
     "cors": "^2.8.5",
     "dotenv": "^17.2.2",
     "express": "^5.1.0",
+    "jsdoc": "^4.0.4",
     "nodemailer": "^7.0.6",
     "nodemon": "^3.1.10",
     "xss": "^1.0.15"

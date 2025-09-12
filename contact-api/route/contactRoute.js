@@ -1,3 +1,8 @@
+/**
+ * Contact Form API Routes
+ * Handles POST requests at `/contact` endpoint.
+ * @module routes
+ */
 import express from "express";
 import { submitContactForm } from "../controllers/contactController.js";
 import { validateFields, checkSpam, sanitizeInput, rateLimiter } from "../middleware/contactMiddleware.js";
