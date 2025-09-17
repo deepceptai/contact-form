@@ -5,6 +5,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "server": "npx nodemon server.js",
+    "start": "node server.js",
     "docs":"jsdoc controllers/contactController.js middleware/contactMiddleware.js route/contactRoute.js -d ./docs/generated"
   },
   "keywords": [],
