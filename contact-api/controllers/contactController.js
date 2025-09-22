@@ -235,7 +235,6 @@ export const submitContactForm = async (req, res) => {
             <!-- Header Section -->
             <div class="email-header">
                 <h1 class="brand-title">Avani & Dvara</h1>
-                <p class="brand-subtitle">The Company</p>
             </div>
             
             <!-- Content Section -->
